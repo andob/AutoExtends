@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":test" external.linked.project.path="$MODULE_DIR$/../test" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" external.system.module.group="AutoExtends" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../test/out/production/classes" />
+    <output-test url="file://$MODULE_DIR$/../test/out/test/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../test">
+      <sourceFolder url="file://$MODULE_DIR$/../test/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../test/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../test/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../test/src/test/resources" type="java-test-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../test/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../test/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../test/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="processor" />
+    <orderEntry type="module" module-name="annotations" />
+    <orderEntry type="library" name="Gradle: com.google.auto.service:auto-service:1.0-rc1" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.guava:guava:16.0" level="project" />
+  </component>
+</module>
