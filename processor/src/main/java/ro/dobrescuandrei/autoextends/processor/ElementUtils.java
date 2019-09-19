@@ -35,8 +35,15 @@ public class ElementUtils
         for (TypeMirror supertype : typeUtils.directSupertypes(element.asType()))
         {
             Element superClassElement=((DeclaredType)supertype).asElement();
-            inheritedElements.addAll(superClassElement.getEnclosedElements());
-            inheritedElements.addAll(getInheritedEnclosedElements(superClassElement));
+            String superClassName=superClassElement.toString();
+            if (!superClassName.startsWith("java.")&&
+                !superClassName.startsWith("javax.")&&
+                !superClassName.startsWith("android.")&&
+                !superClassName.startsWith("androidx."))
+            {
+                inheritedElements.addAll(superClassElement.getEnclosedElements());
+                inheritedElements.addAll(getInheritedEnclosedElements(superClassElement));
+            }
         }
 
         return inheritedElements;

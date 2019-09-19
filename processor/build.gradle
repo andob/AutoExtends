@@ -1,4 +1,8 @@
 apply plugin: 'java-library'
+apply plugin: 'maven'
+
+group='com.github.jitpack'
+version '1.0.0'
 
 sourceCompatibility = "8"
 targetCompatibility = "8"
