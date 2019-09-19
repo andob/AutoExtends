@@ -1,0 +1,2 @@
+include ':test-android', ':test-desktop', ':annotations', ':processor'
+rootProject.name='AutoExtends'
