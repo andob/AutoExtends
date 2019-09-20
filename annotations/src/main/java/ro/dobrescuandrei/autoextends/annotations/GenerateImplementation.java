@@ -11,5 +11,5 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.CLASS)
 public @interface GenerateImplementation
 {
-    String name() default "";
+    String name();
 }
