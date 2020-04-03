@@ -13,8 +13,8 @@ allprojects {
 ```
 ```
 dependencies {
-    implementation 'com.github.andob.AutoExtends:annotations:1.0.0'
-    annotationProcessor 'com.github.andob.AutoExtends:processor:1.0.0'
+    implementation 'com.github.andob.AutoExtends:annotations:1.0.1'
+    annotationProcessor 'com.github.andob.AutoExtends:processor:1.0.1'
 }
 ```
 

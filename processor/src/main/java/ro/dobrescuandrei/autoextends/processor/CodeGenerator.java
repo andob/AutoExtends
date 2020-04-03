@@ -57,7 +57,7 @@ public abstract class CodeGenerator
 
             sourceCode+="}";
 
-            JavaFileObject sourceFile=filer.createSourceFile(outputClassName);
+            JavaFileObject sourceFile=filer.createSourceFile(packageName+"."+outputClassName);
             Writer writer=sourceFile.openWriter();
             writer.write(sourceCode);
             writer.close();
