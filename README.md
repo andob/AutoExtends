@@ -13,8 +13,8 @@ allprojects {
 ```
 ```
 dependencies {
-    implementation 'ro.andob.autoextends:annotations:1.0.2'
-    annotationProcessor 'ro.andob.autoextends:processor:1.0.2'
+    implementation 'ro.andob.autoextends:annotations:1.0.3'
+    annotationProcessor 'ro.andob.autoextends:processor:1.0.3'
 }
 ```
 
