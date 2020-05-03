@@ -1,8 +1,24 @@
 apply plugin: 'java-library'
-apply plugin: 'maven'
+apply plugin: 'maven-publish'
 
-group='com.github.jitpack'
-version '1.0.1'
+sourceCompatibility = "8"
+targetCompatibility = "8"
 
-sourceCompatibility = "7"
-targetCompatibility = "7"
+publishing {
+    publications {
+        repositories.maven {
+            url 'http://maven.andob.info/repository/open_source/'
+            credentials {
+                username "$System.env.MAVEN_PUBLISH_USERNAME"
+                password "$System.env.MAVEN_PUBLISH_PASSWORD"
+            }
+        }
+
+        maven(MavenPublication) {
+            groupId 'ro.andob.autoextends'
+            artifactId 'annotations'
+            version '1.0.3'
+            from components.java
+        }
+    }
+}

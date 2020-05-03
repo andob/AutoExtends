@@ -7,14 +7,14 @@
 ```
 allprojects {
     repositories {
-        maven { url 'https://jitpack.io' }
+        maven { url 'http://maven.andob.info/reporitory/open_source' }
     }
 }
 ```
 ```
 dependencies {
-    implementation 'com.github.andob.AutoExtends:annotations:1.0.1'
-    annotationProcessor 'com.github.andob.AutoExtends:processor:1.0.1'
+    implementation 'ro.andob.autoextends:annotations:1.0.2'
+    annotationProcessor 'ro.andob.autoextends:processor:1.0.2'
 }
 ```
 
